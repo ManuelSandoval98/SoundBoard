@@ -98,22 +98,36 @@
                                     <action selector="agregarTapped:" destination="498-cq-dpY" eventType="touchUpInside" id="sMS-ED-Opc"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJm-nd-247">
+                                <rect key="frame" x="194.5" y="284" width="25.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="5w4-0p-zrc">
+                                <rect key="frame" x="148" y="524" width="118" height="30"/>
+                            </slider>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="KNl-TW-MFf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="IG5-fm-IWR" firstAttribute="centerX" secondItem="gJm-nd-247" secondAttribute="centerX" id="1BP-Du-F9C"/>
                             <constraint firstItem="3R3-2t-lhz" firstAttribute="centerX" secondItem="wwq-bb-Uwa" secondAttribute="centerX" id="8Lr-2Y-02b"/>
                             <constraint firstItem="IG5-fm-IWR" firstAttribute="top" secondItem="SEq-hP-fAG" secondAttribute="bottom" constant="20" id="BGu-dY-yow"/>
                             <constraint firstItem="wwq-bb-Uwa" firstAttribute="centerX" secondItem="6eI-Sy-pV3" secondAttribute="centerX" id="FSE-LM-kHi"/>
                             <constraint firstItem="3R3-2t-lhz" firstAttribute="leading" secondItem="KNl-TW-MFf" secondAttribute="leading" constant="20" id="Fa6-cs-yEg"/>
                             <constraint firstItem="6eI-Sy-pV3" firstAttribute="top" secondItem="wwq-bb-Uwa" secondAttribute="bottom" constant="42" id="IjJ-Ji-2jq"/>
+                            <constraint firstItem="5w4-0p-zrc" firstAttribute="top" secondItem="wwq-bb-Uwa" secondAttribute="bottom" constant="133" id="Qig-6S-Rjn"/>
+                            <constraint firstItem="wwq-bb-Uwa" firstAttribute="centerX" secondItem="5w4-0p-zrc" secondAttribute="centerX" id="UMF-0A-CEr"/>
                             <constraint firstItem="SEq-hP-fAG" firstAttribute="centerX" secondItem="QQR-yR-dqP" secondAttribute="centerX" id="VQj-CG-gdL"/>
                             <constraint firstItem="KNl-TW-MFf" firstAttribute="trailing" secondItem="3R3-2t-lhz" secondAttribute="trailing" constant="20" id="XVQ-fp-aZ3"/>
                             <constraint firstItem="SEq-hP-fAG" firstAttribute="centerX" secondItem="IG5-fm-IWR" secondAttribute="centerX" id="ayR-AC-gVq"/>
                             <constraint firstItem="wwq-bb-Uwa" firstAttribute="top" secondItem="3R3-2t-lhz" secondAttribute="bottom" constant="20" id="dM4-Ta-wvX"/>
+                            <constraint firstItem="gJm-nd-247" firstAttribute="top" secondItem="IG5-fm-IWR" secondAttribute="bottom" constant="8" symbolic="YES" id="dpv-2y-u1g"/>
                             <constraint firstItem="IG5-fm-IWR" firstAttribute="centerX" secondItem="3R3-2t-lhz" secondAttribute="centerX" id="gMF-9d-a9e"/>
                             <constraint firstItem="3R3-2t-lhz" firstAttribute="top" secondItem="IG5-fm-IWR" secondAttribute="bottom" constant="40" id="hS5-ng-zJN"/>
                             <constraint firstItem="SEq-hP-fAG" firstAttribute="top" secondItem="KNl-TW-MFf" secondAttribute="top" constant="40" id="oi9-t6-Pnv"/>
+                            <constraint firstItem="wwq-bb-Uwa" firstAttribute="width" secondItem="5w4-0p-zrc" secondAttribute="width" multiplier="3.2807" id="ssb-1b-WfP"/>
                             <constraint firstItem="3R3-2t-lhz" firstAttribute="width" secondItem="wwq-bb-Uwa" secondAttribute="width" id="t0I-9O-kSG"/>
                         </constraints>
                     </view>
@@ -123,6 +137,8 @@
                         <outlet property="grabarButton" destination="SEq-hP-fAG" id="hYP-5x-vjJ"/>
                         <outlet property="nombreTextField" destination="wwq-bb-Uwa" id="FUi-zc-rEa"/>
                         <outlet property="reproducirButton" destination="IG5-fm-IWR" id="0LG-bb-8a5"/>
+                        <outlet property="tiempoLabel" destination="gJm-nd-247" id="x9f-nG-7Ua"/>
+                        <outlet property="volumenSlider" destination="5w4-0p-zrc" id="cFj-RI-SBf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MRf-Lb-Rj3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
